@@ -76,13 +76,14 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------*/
 body {
   font-family: "Barlow", sans-serif;
-  min-width: 1120px;
+  min-width: 1220px;
   background-color: #eff6ff;
 }
 
 .container {
   margin: 75px auto;
-  max-width: 1120px;
+  max-width: 1220px;
+  padding: 0 50px;
 }
 
 .content {

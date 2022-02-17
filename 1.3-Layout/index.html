@@ -6,101 +6,124 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>1.3 Block Layout</title>
+    <title>CPS - Услуги и сервисы</title>
 </head>
 
 <body>
-    <div class="wrapper">
-        <header class="header header--display">
-            <div class="container">
-                <nav class="header__nav">
-                    <ul class="header__list">
-                        <div class="header__block header__block--display">
-                            <li class="header__item">
-                                <button class="header__button"><span class="header__menu"></span></button>
-                            </li>
-                            <span class="dividere dividere--display"></span>
-                            <li class="header__item">
-                                <a href="#" class="header__logo"><img src="./img/header/menu/logo.svg" alt="logo"></a>
-                            </li>
-                        </div>
-                        <div class="header__block">
-                            <li class="header__item header__item--display">
-                                <button class="header__button"><img src="./img/header/menu/icon/call.svg"
-                                        alt="Позвонить" class="header__call"></button>
-                            </li>
-                            <li class="header__item header__item--display">
-                                <button class="header__button"><img src="./img/header/menu/icon/chat.svg" alt="Чат"
-                                        class="header__chat"></button>
-                            </li>
-                            <li class="header__item header__item--display">
-                                <button class="header__button"><img src="./img/header/menu/icon/profile.svg"
-                                        alt="Профиль" class="header__profile"></button>
-                            </li>
-                            <span class="dividere dividere--display-1120"></span>
-                            <li class="header__item">
-                                <label class="header__label"><span>Оставить заявку</span>
-                                    <button class="header__button"><img src="./img/header/menu/icon/form.svg"
-                                            alt="Оставить заявку" class="header__form"></button>
-                                </label>
-                            </li>
-                            <li class="header__item">
-                                <label class="header__label"><span>Статус заказа</span>
-                                    <button class="header__button"><img src="./img/header/menu/icon/status.svg"
-                                            alt="Статус заказа" class="header__status"></button>
-                                </label>
-                            </li>
-                        </div>
-                    </ul>
-                </nav>
-            </div>
-        </header>
 
-        <main class="page">
-            <div class="container">
-                <h1 class="page__title">Услуги и сервисы</h1>
-                <nav class="page__nav">
-                    <ul class="page__list">
-                        <li class="page__item page__item--active">Ремонтируемые бренды</li>
-                        <li class="page__item">Ремонтируемые устройства</li>
-                        <li class="page__item">Цены на услуги</li>
-                        <li class="page__item">Адреса сервисных центров</li>
-                        <li class="page__item">Специальные цены</li>
-                        <li class="page__item">Отзывы</li>
+    <header class="header">
+        <div class="container">
+            <div class="header__body">
+                <div class="header__block">
+                    <div class="header__item header__item--display-1120">
+                        <button class="button header__button">
+                            <div class="button__icon">
+                                <span class="header__item-text header__item-text--display-1120">Меню</span>
+                                <span class="button__icon-burger"></span>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="header__item header__item--display-768">
+                        <div class="divider header__divider"></div>
+                    </div>
+                    <div class="header__item header__item--display-1120">
+                        <a class="logo header__logo" href="#">
+                            <img class="logo__image" src="./img/logo/logo.svg" alt="CPS">
+                        </a>
+                    </div>
+                </div>
+                <div class="header__block">
+                    <div class="header__item header__item--display-768">
+                        <button class="button header__button">
+                            <span class="header__item-text header__item-text--display-1120">Заказать звонок</span>
+                            <div class="button__icon button__icon--icon--call"></div>
+                        </button>
+                    </div>
+                    <div class="header__item header__item--display-768">
+                        <button class="button header__button">
+                            <span class="header__item-text header__item-text--display-1120">Обратная связь</span>
+                            <div class="button__icon button__icon--icon--chat"></div>
+                        </button>
+                    </div>
+                    <div class="header__item header__item--display-768">
+                        <button class="button header__button">
+                            <span class="header__item-text header__item-text--display-1120">Профиль</span>
+                            <div class="button__icon button__icon--icon--profile"></div>
+                        </button>
+                    </div>
+                    <div class="header__item header__item--display-1120">
+                        <div class="divider header__divider"></div>
+                    </div>
+                    <div class="header__item">
+                        <button class="button header__button">
+                            <span class="header__item-text header__item-text--display-1120">Оставить заявку</span>
+                            <div class="button__icon button__icon--icon--repair"></div>
+                        </button>
+                    </div>
+                    <div class="header__item">
+                        <button class="button header__button">
+                            <span class="header__item-text header__item-text--display-1120">Статус ремонта</span>
+                            <div class="button__icon button__icon--icon--status"></div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="page">
+        <div class="container">
+            <header class="page-header page__header">
+                <h1 class="page-header__title">Услуги и сервисы</h1>
+                <nav class="page-header__nav">
+                    <ul class="page-header__list">
+                        <li class="page-header__item page-header__item--active">
+                            <button class="page-header__button">Ремонтируемые бренды</button>
+                        </li>
+                        <li class="page-header__item">
+                            <button class="page-header__button">Дополнительные услуги</button>
+                        </li>
+                        <li class="page-header__item">
+                            <button class="page-header__button">Цены на услуги</button>
+                        </li>
+                        <li class="page-header__item">
+                            <button class="page-header__button">Адреса сервисных центров</button>
+                        </li>
+                        <li class="page-header__item">
+                            <button class="page-header__button">Специальные цены</button>
+                        </li>
+                        <li class="page-header__item">
+                            <button class="page-header__button">Отзывы</button>
+                        </li>
                     </ul>
-                    <span class="page__blur"></span>
                 </nav>
-                <section class="brands">
-                    <div class="brands__body">
-                        <p class="brands__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell.
-                            Только у
-                            нас
-                            вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+            </header>
+
+            <section class="about page__about">
+                <div class="about__body">
+                    <div class="about__text-box">
+                        <p class="about__text">
+                            Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете
+                            отремонтировать свой ноутбук Dell с официальной гарантией производителя.
                         </p>
                         <br>
-                        <p class="brands__text brands__text--display">Мы успешно работаем с 1992 года и заслужили
-                            репутацию
-                            надежного партнера,
-                            что
-                            подтверждает большое
-                            количество постоянных клиентов.</p>
-                        <p class="brands__text brands__text--display">Мы гордимся тем, что к нам обращаются по
-                            рекомендациям и, в
-                            свою
-                            очередь, советуют нас родным и близким.</p>
-                        <button class="brands__more"><span class="brands__more-icon"></span>Читать далее</button>
+                        <p class="about__text">
+                            Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает
+                            большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по
+                            рекомендациям
+                            и, в свою очередь, советуют нас родным и близким.
+                        </p>
                     </div>
-                    <div class="brands__image"><img src="./img/page/brands/image-brands.png" alt=""></div>
-                </section>
-            </div>
-        </main>
+                    <button class="about__more">
+                        <span class="about__more-icon"></span>Читать далее
+                    </button>
+                </div>
+                <img class="about__image" src="./img/page/about/about-image.png"></img>
+            </section>
 
-        <footer class="footer">
-            <div class="container">
+        </div>
+    </main>
 
-            </div>
-        </footer>
-    </div>
 </body>
 
 </html>

@@ -415,8 +415,6 @@ body {
   .page {
     padding-top: 24px;
     padding-bottom: 24px;
-    -webkit-box-shadow: 0 0 10px 5px rgba(128, 128, 128, 0.1);
-            box-shadow: 0 0 10px 5px rgba(128, 128, 128, 0.1);
   }
   .page-header {
     margin: 0 24px;
@@ -487,6 +485,8 @@ body {
     padding-bottom: 50px;
     max-width: 1120px;
     margin: 0 auto;
+    -webkit-box-shadow: 0 0 10px 5px rgba(128, 128, 128, 0.1);
+            box-shadow: 0 0 10px 5px rgba(128, 128, 128, 0.1);
   }
   .page-header {
     margin: 0 32px;

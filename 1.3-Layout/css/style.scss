@@ -307,11 +307,14 @@ body {
             margin: 0 24px;
         }
         &__text-box {
+            flex: 1 0 312px;
             max-height: 160px;
             line-height: 20px;
         }
         &__image {
+            flex: 0 1 auto;
             min-height: 208px;
+            max-width: 360px;
             border-radius: 6px;
             margin: 0 24px;
         }
@@ -384,6 +387,7 @@ body {
         }
         &__image {
             min-height: 307px;
+            max-width: 100%;
             margin: 0 32px;
         }
     }

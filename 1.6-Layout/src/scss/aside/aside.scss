@@ -1,0 +1,57 @@
+.aside {
+  position: fixed;
+  display: flex;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.35s ease;
+  &__body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-y: auto;
+    width: 100%;
+    padding: 0 16px;
+    background: #fff;
+  }
+  &__fade {
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    background-color: #f8f8f8;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.aside--opened.menu {
+  left: 0;
+}
+.aside--opened.feedback, .aside--opened.call {
+  right: 0;
+}
+.aside--opened > .aside__fade {
+  transition: opacity 0.5s ease-out 0.3s;
+  visibility: visible;
+  opacity: 0.94;
+}
+
+@media (min-width: 768px) {
+  .aside {
+    &__body {
+      width: 320px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .aside.menu {
+    .aside__fade {
+      visibility: hidden;
+    }
+  }
+}

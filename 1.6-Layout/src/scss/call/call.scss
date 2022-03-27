@@ -1,0 +1,79 @@
+.call {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  right: -100%;
+  &__body {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 0px 4px rgba(69, 79, 126, 0.02),
+      -16px 0px 52px rgba(14, 24, 80, 0.2);
+  }
+  &__button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 24px 16px;
+    z-index: 1;
+  }
+  &__form {
+    margin: 88px 0 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  &__input {
+    font-size: 16px;
+    padding: 12px 16px;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+  }
+  &__title {
+    position: relative;
+    margin-bottom: 8px;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 40px;
+    color: #1b1c21;
+  }
+  &__title::before {
+    position: absolute;
+    top: 0;
+    left: -16px;
+    content: "";
+    height: 100%;
+    width: 4px;
+    background-color: #41f6d7;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+  &__submit {
+    align-self: flex-end;
+  }
+}
+
+@media (max-width: 767px) {
+  .call {
+    &__body {
+      box-shadow: none;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .call {
+    &__body {
+      padding: 0 32px;
+      width: 440px;
+    }
+    &__button {
+      position: static;
+    }
+    &__form {
+      margin: 24px 0;
+    }
+    &__title::before {
+      left: -32px;
+    }
+  }
+}

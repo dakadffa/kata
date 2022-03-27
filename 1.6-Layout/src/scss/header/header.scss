@@ -1,0 +1,40 @@
+.header {
+  background-color: #fff;
+  height: 88px;
+  border-bottom: 1px solid #d9fff5;
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -8px;
+    height: 100%;
+  }
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__item {
+    margin: 0 8px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header {
+    position: relative;
+    height: 0;
+    background: none;
+    border: none;
+    &__body {
+      position: relative;
+    }
+    &__block:first-child {
+      display: none;
+    }
+    &__block {
+      position: absolute;
+      z-index: 1;
+      top: 24px;
+      right: 0;
+    }
+  }
+}

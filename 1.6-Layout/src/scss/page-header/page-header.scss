@@ -1,0 +1,42 @@
+.page-header {
+    &__body {
+        margin: 24px 0;
+    }
+    &__title {
+        position: relative;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 40px;
+        color: #1B1C21;
+    }
+    &__title::before {
+        position: absolute;
+        top: 0;
+        left: -16px;
+        content: "";
+        height: 100%;
+        width: 4px;
+        background-color: #41f6d7;
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+}
+
+@media (min-width: 768px) {
+    .page-header {
+        &__title::before {
+            left: -24px;
+        }
+    }
+}
+
+@media (min-width: 1120px) {
+    .page-header {
+        &__body {
+            margin: 24px 0;
+        }
+        &__title::before {
+            left: -32px;
+        }
+    }
+}

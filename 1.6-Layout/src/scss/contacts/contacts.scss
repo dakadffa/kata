@@ -1,0 +1,29 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+
+  &__mail {
+      color: #1b1c21;
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 12px;
+      font-weight: 500;
+  }
+
+  &__phone {
+      color: #1b1c21;
+      font-size: 24px;
+      line-height: 32px;
+      font-weight: bold;
+      margin-bottom: 8px;
+  }
+  &__mail:hover, &__phone:hover {
+      color: #7e7e82;
+  }
+}
+
+@media (min-width: 1120px) {
+  .contacts {
+    margin-bottom: 32px;
+  }
+}

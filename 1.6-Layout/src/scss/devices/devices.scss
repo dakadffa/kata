@@ -1,0 +1,63 @@
+.devices {
+  &__body {
+    // margin: 0 24px;
+  }
+  &__container {
+    // margin: 0 -16px;
+  }
+  &__cards {
+    position: relative;
+  }
+  &__card {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+    height: 160px;
+    width: 240px;
+    padding: 16px;
+  }
+  &__text {
+    align-self: flex-start;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #1B1C21;
+  }
+  &__button {
+    position: relative;
+    align-self: flex-end;
+    height: 40px;
+    width: 40px;
+    border: 2px solid #ff3e79;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+  }
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-6px, -4px) rotate(45deg);
+    display: block;
+    height: 8px;
+    width: 8px;
+    border-right: 2px solid #ff3e79;
+    border-top: 2px solid #ff3e79;
+    transition: border-color 0.3s ease;
+  }
+  &__card:hover &__button {
+    background-color: #ff3e79;
+  }
+  &__card:hover &__icon {
+    border-color: #fff;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1119px) {
+  .devices {
+    &__card {
+      width: 224px;
+    }
+  }
+}

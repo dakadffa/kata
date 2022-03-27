@@ -1,0 +1,48 @@
+.footer {
+  margin-top: 48px;
+  border-top: 1px solid #D9FFF5;
+  &__body {
+    padding: 16px 0;
+  }
+  &__link {
+    color: #7E7E82;
+  }
+  &__link:hover {
+    // color: cornflowerblue;
+    color: #FF3E79;
+  }
+  &__textbox {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 16px 0;
+  }
+  &__text {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #7E7E82;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    &__body {
+      padding: 32px 0;
+    }
+    &__textbox {
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: center;
+    }
+    &__text {
+      width: 33.333%;
+    }
+    &__text:first-child {
+      text-align: left;
+    }
+    &__text:last-child {
+      text-align: right;
+    }
+  }
+}

@@ -1,0 +1,65 @@
+@import "nullstyle";
+@import "fonts";
+
+body {
+  background: #f2f2f2;
+  font-family: "TT Lakes", "Arial", sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background: #f8f8f8;
+  margin: 0 auto;
+}
+
+.container {
+  height: 100%;
+  padding: 0 16px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 24px;
+  }
+}
+
+@media (min-width: 1120px) {
+  .container {
+    padding: 0 32px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .wrapper {
+    min-width: 1120px;
+    margin: 0;
+    margin-left: 320px;
+  }
+}
+
+@import "./header/header.scss";
+@import "./footer/footer.scss";
+@import "./button/button.scss";
+@import "./divider/divider.scss";
+@import "./page/page.scss";
+@import "./page-header/page-header.scss";
+@import "./page-nav/page-nav.scss";
+@import "./about/about.scss";
+@import "./subtitle/subtitle.scss";
+@import "./swiper/swiper.scss";
+@import "./brands/brands.scss";
+@import "./devices/devices.scss";
+@import "./more/more.scss";
+@import "./prices/prices.scss";
+@import "./contacts/contacts.scss";
+@import "./langs/langs.scss";
+@import "./aside/aside.scss";
+@import "./menu/menu.scss";
+@import "./logo/logo.scss";
+@import "./form/form.scss";
+@import "./feedback/feedback.scss";
+@import "./call/call.scss";
+
+@import "display";

@@ -1,0 +1,17 @@
+.langs {
+  &__lang {
+      background: none;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 500;
+      margin: 0 4px;
+      color: #1b1c21;
+  }
+  &__lang:first-child {
+      margin-left: 0;
+  }
+  &__lang--active,
+  &__lang:hover {
+      color: #7e7e82;
+  }
+}

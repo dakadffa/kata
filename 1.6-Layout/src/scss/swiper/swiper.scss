@@ -1,0 +1,66 @@
+@import "swiper/swiper.scss";
+@import "swiper/components/pagination/pagination.scss";
+
+.swiper-container {
+  position: relative;
+  margin: 0 -16px;
+  padding: 16px;
+}
+.swiper-container::after {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  content: "";
+  height: 100%;
+  width: 24px;
+  background: linear-gradient(
+    to right,
+    rgba(248, 248, 248, 0),
+    rgba(248, 248, 248, 1)
+  );
+}
+.swiper-wrapper {
+    max-height: 160px;
+}
+.swiper-wrapper--display--768 {
+  flex-wrap: wrap;
+  gap: 16px 24px;
+}
+.swiper-slide {
+  width: auto;
+}
+
+.swiper-pagination {
+  position: relative;
+  margin-top: 16px;
+  margin-bottom: -16px;
+}
+
+.swiper-pagination-bullet {
+  background-color: #ddd;
+  height: 12px;
+  width: 12px;
+  opacity: 1;
+  margin: 0 6px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #b5b6bc;
+}
+
+@media (min-width: 768px) {
+  .swiper-container {
+    margin: 0 -24px;
+    padding: 16px 24px;
+  }
+}
+@media (min-width: 1120px) {
+  .swiper-container {
+    margin: 0 -32px;
+    padding: 16px 32px;
+  }
+  .swiper-wrapper--display--768 {
+    gap: 16px 32px;
+  }
+}

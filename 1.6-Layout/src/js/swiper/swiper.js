@@ -5,6 +5,8 @@ Swiper.use([Pagination]);
 
 const screenWidth = window.screen.width;
 
+// Естли две точки на самом деле запятые
+
 if (screenWidth < 768) { 
   let pricesHeader = document.querySelector('.prices__header');
   pricesHeader.style.display = 'none';

@@ -121,8 +121,12 @@
   .menu {
     width: 320px;
     left: 0;
+    background: #fff;
+    position: absolute;
+    order: -1;
     &__body {
       box-shadow: none;
+      max-height: 890px;
     }
     &__header-item--display-1440 {
       display: none;

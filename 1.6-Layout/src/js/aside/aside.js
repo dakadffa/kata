@@ -1,3 +1,5 @@
+let wrapper = document.querySelector(".wrapper");
+
 let asides = document.querySelectorAll("aside");
 
 let asideMenu = document.querySelector(".menu");
@@ -7,6 +9,7 @@ let buttonBurger = document.querySelector(
 
 buttonBurger.addEventListener("click", function () {
   asideMenu.classList.add("aside--opened");
+  wrapper.classList.add("noscroll");
 });
 
 let asideFeedback = document.querySelector(".feedback");
@@ -17,6 +20,7 @@ let buttonsFeedback = document.querySelectorAll(
 for (let i = 0; i < buttonsFeedback.length; i++) {
   buttonsFeedback[i].parentElement.addEventListener("click", function () {
     asideFeedback.classList.add("aside--opened");
+    wrapper.classList.add("noscroll");
   });
 }
 
@@ -28,6 +32,7 @@ let buttonsCall = document.querySelectorAll(
 for (let i = 0; i < buttonsCall.length; i++) {
   buttonsCall[i].parentElement.addEventListener("click", function () {
     asideCall.classList.add("aside--opened");
+    wrapper.classList.add("noscroll");
   });
 }
 
@@ -40,8 +45,10 @@ for (let i = 0; i < asides.length; i++) {
 
   buttonClose.addEventListener("click", function () {
     asides[i].classList.remove("aside--opened");
+    wrapper.classList.remove("noscroll");
   });
   fade.addEventListener("click", function () {
     asides[i].classList.remove("aside--opened");
+    wrapper.classList.remove("noscroll");
   });
 }

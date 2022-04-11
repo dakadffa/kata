@@ -7,11 +7,14 @@ body {
 }
 
 .wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-  background: #f8f8f8;
-  margin: 0 auto;
+  position: relative;
+  &__content {
+    margin: 0 auto;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    background: #f8f8f8;
+  }
 }
 
 .container {
@@ -33,9 +36,16 @@ body {
 
 @media (min-width: 1440px) {
   .wrapper {
-    min-width: 1120px;
-    margin: 0;
-    margin-left: 320px;
+    position: relative;
+    display: flex;
+    max-width: 1440px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px 5px rgba(128, 128, 128, 0.1);
+    overflow-x: hidden;
+    &__content {
+      max-width: 1120px;
+      margin-left: 320px;
+    }   
   }
 }
 
@@ -61,5 +71,6 @@ body {
 @import "./form/form.scss";
 @import "./feedback/feedback.scss";
 @import "./call/call.scss";
+@import "./noscroll/noscroll.scss";
 
 @import "display";
